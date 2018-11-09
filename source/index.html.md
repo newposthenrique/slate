@@ -6,7 +6,7 @@ language_tabs:
 - json: JSON
 
 toc_footers:
-- <a href='mailto:henrique@newpost.com'>Desenvolvimento Newpost</a>
+- <a href='mailto:henrique.vital@newpost.com'>Desenvolvimento Newpost</a>
 - <a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a>
 
 includes:
@@ -46,22 +46,22 @@ Para a autenticação é fornecida uma chave única por cliente/parceiro que dev
 
 ```json
 
-  "token":"098f6bcd4621d373cade4e832627b4f5"
-  "params":{
-    "action":"create/track/stickers",
-    "description":"12092",
-    "couriercode":"EMS",
-    "size":"P",
-    "trackno":"34234213252151",
-    "target_machine":"5",
-    "parcels":"121212121,31331313,223234523,5131341...",
-    "format":"pdf",
-    "receiver":{
-      "phone":"5511912345678",
-      "email":"contato@newpost.com",
-      "customname":"Newpost api"
-    }
+"token":"098f6bcd4621d373cade4e832627b4f5"
+"params":{
+  "action":"create/track/stickers",
+  "description":"12092",
+  "couriercode":"EMS",
+  "size":"P",
+  "trackno":"34234213252151",
+  "target_machine":"5",
+  "parcels":"121212121,31331313,223234523,5131341...",
+  "format":"pdf",
+  "receiver":{
+    "phone":"5511912345678",
+    "email":"contato@newpost.com",
+    "customname":"Newpost api"
   }
+}
 
 ```
 
@@ -92,17 +92,17 @@ customname|Newpost|nome do recebedor como vai aparecer na etiqueta
 
 ```json
 "params":{
-    "action":"create",
-    "description":"order no:12092",
-    "couriercode":"EMS",
-    "size":"30",
-    "target_machine":5,
-    "receiver":{
-      "phone":"11912345678",
-      "email":"contato@newpost.com",
-      "customname":"Newpost api"
-    }
+  "action":"create",
+  "description":"order no:12092",
+  "couriercode":"EMS",
+  "size":"30",
+  "target_machine":5,
+  "receiver":{
+    "phone":"11912345678",
+    "email":"contato@newpost.com",
+    "customname":"Newpost api"
   }
+}
 ```
 
 > O comando acima deve retornar algo como:
@@ -218,11 +218,23 @@ phone|5511987654321|número com código do país e DDD do recebedor
 e-mail|developer@newpost.com|e-mail do recebedor
 customname|Desevolvimento Newpost|nome do recebedor como vai aparecer na etiqueta
 
+
+# Listagem de Terminais
+
+## Listar terminais online
+
+`http://server.newpost.com/sistema/api/order/machines`
+
+```json
+
+
+```
+
 # Intelipost
 
 ## Envio de lista de ordens
 
-`http://52.5.158.58/sistema/api/order/preorder`
+`http://server.newpost.com/sistema/api/order/preorder`
 
 ```json
 {
