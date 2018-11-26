@@ -108,7 +108,11 @@ customname|Newpost|nome do recebedor como vai aparecer na etiqueta
 > O comando acima deve retornar algo como:
 
 ```json
-
+{
+    "status": "1",
+    "msg": "track info is created. E-mail status: dados vazios.",
+    "trackno": "20181122140746"
+}
 ```
 
 Este endpoint deve ser executado uma vez para cada novo envio.
